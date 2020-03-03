@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const root = document.getElementById('root');
+//const elemento = React.createElement(componente, propiedades, hijos);
+//const elemento = React.createElement('h1', {className: 'saludo'}, 'Hello world');//como se puede tener varias propiedades se pone como objeto js
+//const elemento = <h1>Hola mundo</h1>;// uso de JSX
+//ReactDOM.render(elemento, root);//elemento es el elemento a renderizar en el segundo parametro
+//ReactDOM.render(elemento, root);
+//ReactDOM.render(<h1 className="saludos">Hola mundo</h1>, root);// uso directo de JSX, se usa className
+ReactDOM.render(<App />, root);
